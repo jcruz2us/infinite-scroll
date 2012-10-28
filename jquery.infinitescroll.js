@@ -199,7 +199,7 @@
 			var $window = $(window);
 
 			function needsPrefill() {
-				return ($document.height() <= $window.height());
+				return instance.options.prefill && ($document.height() <= $window.height());
 			}
 
 			this._prefill = function() {
